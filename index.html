@@ -30,7 +30,7 @@
                         <div class="input-group">
                             <div class="input-field">
                                 <i class="fa-solid fa-lock"></i>
-                                <input type="password" placeholder="Password" id="pass" required  oninput="validateInput(this)" 
+                                <input type="password" placeholder="Password" id="pass" required  oninput="validateInput(document.getElementById('pass').value)" 
                                 pattern="[a-zA-Z0-9]{8,}"  title="">
                         </div>
                         <div class="alert" id="alert">
@@ -76,11 +76,11 @@
     let alert = document.getElementById("alert")
 
     function validateInput(input) {
-  if (!input.checkValidity()) {
-        input.setCustomValidity("Password must be at least 8 characters and contain only letters and numbers");
-    } else {
-        input.setCustomValidity("");
-    }
+    if (!input.checkValidity()) {
+            input.setCustomValidity("Password must be at least 8 characters and contain only letters and numbers");
+        } else {
+            input.setCustomValidity("");
+        }
 }
     switchBtn.onclick = function(){
         name.value = "";
