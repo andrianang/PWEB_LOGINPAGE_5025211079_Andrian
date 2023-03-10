@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color:#f9f9f9;
+    margin-right: 600px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:#f9f9f9; 
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.navbar a:hover{
+    background-color: #26390e;
+    color:#fff;
+    transform: scale(1.1); 
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-text{
+    position: absolute;
+    font-size: 5em;
+    color: #f9f9f9;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    position: relative;
+    background: #788c00;
+    padding: 100px;
+}
+
+.about h2{
+    font-size: 3em;
+    color: #26390e;
+    margin-bottom: 10px;
+}
+
+.about p{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    width: 500px;
+}
+
+.about-img{
+    width: 600px;
+    margin-left: 100px;
+}
+
+.about-img img{
+    margin-top: 135px;
+    height: auto;
+    width: 100%;
+}
+.about-text{
+    margin-top: 135px;
+    margin-left: 30px;
+}
+.about-text span{
+    color: #f9f9f9;
+}
+
+.heading{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.heading span{
+    color: #788c00;
+    font-weight: 600;
+}
+
+.heading h2{
+    color: #26390e;
+    font-size: 3em;
+}
+
+.menu{
+    color: #f9f9f9;
+    margin-bottom: 50px;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position:relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #feeee7;
+    padding:20px;
+    border-radius: 0.5rem;
+}
+
+.box-img{
+    width: 220px;
+    height: 220px;
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.box h2{
+    font-size: 1.3rem;
+    color:#26390e;
+}
+
+.box h3{
+    font-size: 1rem;
+    color:#26390e;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+
+.box span{
+    font-weight: 600;
+    color: #788c00;
+}
+
+
+.box .bx{
+    background: #26390e;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 7px 10px;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.grow:hover { 
+transform: scale(1.1); 
+}
+
+
+.cta{
+    background: #788c00;
+    padding: 70px 0;
+    text-align: center;
+    width: 66%;
+    margin: 100px auto;
+    border-radius:10px;
+    
+}
+
+.cta h2{
+    font-size: 2rem;
+    color: #f9f9f9;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #26390e;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #f9f9f9;
+}
+
+.footer{
+    margin-left: 150px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foot{
+    padding:10px 0;
+}
+
+.col{
+    width: 25%;
+}
+
+.col h4{
+    font-size: 1.2rem;
+    color: #26390e;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.col h4::before{
+    content: "";
+    position:absolute;
+    height: 2px;
+    width: 50px;
+    left:0;
+    bottom: -8px;
+    background: #b1c82d;
+}
+
+
+
+.col ul li:not(last-child){
+    margin-bottom: 15px;
+}
+
+.col ul li{
+    text-decoration: none;
+    color:#9897a7;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col ul li a{
+    color:#9897a7;
+} 
+
+.col ul li a:hover{
+    color:#26390e;
+    transform: translateX(-10px)
+}
+
+.col .social{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col .social a{
+    height: 40px;
+    color: #26390e;
+    display: inline-flex;
+    align-items: center;
+}
+
+.col .social a:hover{
+    transform: scale(1.2);
+    color: ;
+}
+
+
